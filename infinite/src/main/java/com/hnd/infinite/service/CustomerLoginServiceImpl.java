@@ -12,9 +12,9 @@ public class CustomerLoginServiceImpl implements CustomerLoginService {
     private CustomerLoginRepository customerLoginRepository;
     public String authenticateCustomer(CustomerLoginDTO customerLogin) throws HnDBankException {
         String toRet = null;
-        CustomerLoginDTO customerLoginFromRepository = customerLoginRepository
+        CustomerLoginDTO customerLoginDTO = customerLoginRepository
                 .getCustomerLoginByLoginName(customerLogin.getLoginName());
-        if (customerLogin.getPassword().equals(customerLoginFromRepository.getPassword())){
+        if (customerLogin.getPassword().equals(customerLoginDTO.getPassword())){
             toRet = "SUCCESS";
         }else{
             throw new HnDBankException("Service.WRONG_CREDENTIALS");

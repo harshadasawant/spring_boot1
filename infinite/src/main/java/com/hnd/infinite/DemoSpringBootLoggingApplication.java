@@ -29,7 +29,7 @@ public class DemoSpringBootLoggingApplication implements CommandLineRunner {
         try{
             CustomerLoginDTO customerLogin = new CustomerLoginDTO();
             customerLogin.setLoginName("harry");
-            customerLogin.setPassword("harry123");
+            customerLogin.setPassword("harry1234");
             customerLoginController.authenticateCustomer(customerLogin);
 
             LOGGER.info(environment.getProperty("SUCCESS"));

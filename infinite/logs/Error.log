@@ -10,3 +10,19 @@
 2022-10-18 11:02:09 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
 2022-10-18 11:02:09 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 0.746 seconds (JVM running for 1.037)
 2022-10-18 11:02:09 [main] ERROR c.h.i.DemoSpringBootLoggingApplication - Login denied. Invalid credentials.
+2022-10-18 11:42:30 [main] INFO  com.hnd.infinite.SampleRunner - Starting SampleRunner using Java 17.0.1 on Harshada with PID 3920 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-18 11:42:30 [main] INFO  com.hnd.infinite.SampleRunner - No active profile set, falling back to 1 default profile: "default"
+2022-10-18 11:42:30 [main] INFO  com.hnd.infinite.SampleRunner - Started SampleRunner in 0.957 seconds (JVM running for 2.359)
+2022-10-18 11:42:30 [main] INFO  com.hnd.infinite.SampleRunner - Welcome to CommandLineRunner
+2022-10-18 12:04:34 [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 23184 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-18 12:04:34 [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-18 12:04:36 [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.944 seconds (JVM running for 3.382)
+2022-10-18 12:04:36 [main] ERROR com.hnd.infinite.DemoSpringBootLoggingApplication - Login denied. Invalid credentials.
+2022-10-18 12:04:57 [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 16220 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-18 12:04:57 [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-18 12:04:58 [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.673 seconds (JVM running for 2.985)
+2022-10-18 12:04:58 [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-18 12:16:53 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 21352 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-18 12:16:53 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-18 12:16:53 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 0.724 seconds (JVM running for 1.283)
+2022-10-18 12:16:53 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
