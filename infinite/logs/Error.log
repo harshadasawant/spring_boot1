@@ -1,0 +1,12 @@
+2022-10-18 10:57:09 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 8668 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-18 10:57:09 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-18 10:57:09 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 0.738 seconds (JVM running for 1.036)
+2022-10-18 10:57:09 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-18 11:00:46 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 19052 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-18 11:00:46 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-18 11:00:46 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 0.729 seconds (JVM running for 1.014)
+2022-10-18 11:00:46 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-18 11:02:09 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 11476 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-18 11:02:09 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-18 11:02:09 [main] INFO  c.h.i.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 0.746 seconds (JVM running for 1.037)
+2022-10-18 11:02:09 [main] ERROR c.h.i.DemoSpringBootLoggingApplication - Login denied. Invalid credentials.
