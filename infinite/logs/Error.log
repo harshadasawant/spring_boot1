@@ -26,3 +26,14 @@
 2022-10-18 12:16:53 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
 2022-10-18 12:16:53 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 0.724 seconds (JVM running for 1.283)
 2022-10-18 12:16:53 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 00:33:43 am [main] INFO  com.hnd.infinite.InfiniteApplication - Starting InfiniteApplication using Java 17.0.1 on Harshada with PID 23808 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 00:33:43 am [main] INFO  com.hnd.infinite.InfiniteApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 00:33:44 am [main] INFO  com.hnd.infinite.InfiniteApplication - Started InfiniteApplication in 0.769 seconds (JVM running for 1.43)
+2022-10-19 00:34:15 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 13664 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 00:34:15 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 00:34:15 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 0.698 seconds (JVM running for 1.304)
+2022-10-19 00:34:15 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 09:35:55 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 16260 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 09:35:55 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 09:35:55 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.348 seconds (JVM running for 7.299)
+2022-10-19 09:35:55 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
