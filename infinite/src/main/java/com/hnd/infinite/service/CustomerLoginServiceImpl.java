@@ -11,6 +11,7 @@ public class CustomerLoginServiceImpl implements CustomerLoginService {
     @Autowired
     private CustomerLoginRepository customerLoginRepository;
     public String authenticateCustomer(CustomerLoginDTO customerLogin) throws HnDBankException {
+        System.out.println("inside service impl method");
         String toRet = null;
         CustomerLoginDTO customerLoginDTO = customerLoginRepository
                 .getCustomerLoginByLoginName(customerLogin.getLoginName());

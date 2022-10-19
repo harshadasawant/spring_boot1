@@ -37,3 +37,523 @@
 2022-10-19 09:35:55 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
 2022-10-19 09:35:55 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.348 seconds (JVM running for 7.299)
 2022-10-19 09:35:55 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:02:37 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 21064 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:02:37 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:02:37 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.115 seconds (JVM running for 2.861)
+2022-10-19 10:02:37 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:03:26 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 2436 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:03:26 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:03:26 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.118 seconds (JVM running for 1.909)
+2022-10-19 10:03:26 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - Before advice called.
+2022-10-19 10:03:26 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After returning advice called.
+2022-10-19 10:03:26 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After advice called.
+2022-10-19 10:03:26 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:05:19 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 23480 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:05:19 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:05:19 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.185 seconds (JVM running for 2.006)
+2022-10-19 10:05:19 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - Before advice called.
+2022-10-19 10:05:19 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After returning advice called.
+2022-10-19 10:05:19 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After advice called.
+2022-10-19 10:05:19 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:05:46 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 8220 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:05:46 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:05:47 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.218 seconds (JVM running for 2.075)
+2022-10-19 10:05:47 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - Before advice called.
+2022-10-19 10:05:47 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After returning advice called.
+2022-10-19 10:05:47 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After advice called.
+2022-10-19 10:05:47 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:08:13 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 27408 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:08:13 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:08:14 am [main] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoSpringBootLoggingApplication': Unsatisfied dependency expressed through field 'customerLoginController'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerLoginController': Unsatisfied dependency expressed through field 'customerLoginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerLoginService': Unsatisfied dependency expressed through field 'customerLoginRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerLoginRepository' defined in file [D:\Training\Infinite_java\infinite_spring\infinite\target\classes\com\hnd\infinite\repository\CustomerLoginRepositoryImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 48
+execution(* com.hnd.infinite.service.*Impl.*(..), returning ="returnvalue""))
+                                                ^
+
+2022-10-19 10:08:14 am [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-19 10:08:14 am [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoSpringBootLoggingApplication': Unsatisfied dependency expressed through field 'customerLoginController'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerLoginController': Unsatisfied dependency expressed through field 'customerLoginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerLoginService': Unsatisfied dependency expressed through field 'customerLoginRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerLoginRepository' defined in file [D:\Training\Infinite_java\infinite_spring\infinite\target\classes\com\hnd\infinite\repository\CustomerLoginRepositoryImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 48
+execution(* com.hnd.infinite.service.*Impl.*(..), returning ="returnvalue""))
+                                                ^
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.main(DemoSpringBootLoggingApplication.java:24) ~[classes/:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerLoginController': Unsatisfied dependency expressed through field 'customerLoginService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerLoginService': Unsatisfied dependency expressed through field 'customerLoginRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerLoginRepository' defined in file [D:\Training\Infinite_java\infinite_spring\infinite\target\classes\com\hnd\infinite\repository\CustomerLoginRepositoryImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 48
+execution(* com.hnd.infinite.service.*Impl.*(..), returning ="returnvalue""))
+                                                ^
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 19 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerLoginService': Unsatisfied dependency expressed through field 'customerLoginRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerLoginRepository' defined in file [D:\Training\Infinite_java\infinite_spring\infinite\target\classes\com\hnd\infinite\repository\CustomerLoginRepositoryImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 48
+execution(* com.hnd.infinite.service.*Impl.*(..), returning ="returnvalue""))
+                                                ^
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerLoginRepository' defined in file [D:\Training\Infinite_java\infinite_spring\infinite\target\classes\com\hnd\infinite\repository\CustomerLoginRepositoryImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 48
+execution(* com.hnd.infinite.service.*Impl.*(..), returning ="returnvalue""))
+                                                ^
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 19 more
+Caused by: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 48
+execution(* com.hnd.infinite.service.*Impl.*(..), returning ="returnvalue""))
+                                                ^
+
+	at org.aspectj.weaver.tools.PointcutParser.resolvePointcutExpression(PointcutParser.java:334) ~[aspectjweaver-1.9.7.jar:?]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:312) ~[aspectjweaver-1.9.7.jar:?]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 19 more
+2022-10-19 10:08:51 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 19616 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:08:51 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:08:52 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.248 seconds (JVM running for 2.111)
+2022-10-19 10:08:52 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - Before advice called.
+2022-10-19 10:08:52 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After returning advice called.
+2022-10-19 10:08:52 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After advice called.
+2022-10-19 10:08:52 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:18:06 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 25892 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:18:06 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:18:06 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.374 seconds (JVM running for 2.475)
+2022-10-19 10:18:06 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - Before advice called.
+2022-10-19 10:18:06 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After returning advice called.
+2022-10-19 10:18:06 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After advice called.
+2022-10-19 10:18:06 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:19:27 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 30444 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:19:27 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:19:28 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.209 seconds (JVM running for 2.084)
+2022-10-19 10:19:28 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - Before advice called.
+2022-10-19 10:19:28 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After returning advice called.SUCCESS
+2022-10-19 10:19:28 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After advice called.
+2022-10-19 10:19:28 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:19:43 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 13632 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:19:43 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:19:44 am [main] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoSpringBootLoggingApplication': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'returnvalue' was not bound in advice arguments
+2022-10-19 10:19:44 am [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-19 10:19:44 am [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoSpringBootLoggingApplication': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'returnvalue' was not bound in advice arguments
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.main(DemoSpringBootLoggingApplication.java:24) ~[classes/:?]
+Caused by: java.lang.IllegalStateException: Returning argument name 'returnvalue' was not bound in advice arguments
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindExplicitArguments(AbstractAspectJAdvice.java:484) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindArgumentsByName(AbstractAspectJAdvice.java:435) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:386) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:309) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:149) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:113) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:213) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:144) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 13 more
+2022-10-19 10:20:59 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 26740 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:20:59 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:21:00 am [main] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoSpringBootLoggingApplication': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'returnvalue' was not bound in advice arguments
+2022-10-19 10:21:00 am [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-19 10:21:00 am [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoSpringBootLoggingApplication': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'returnvalue' was not bound in advice arguments
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.main(DemoSpringBootLoggingApplication.java:24) ~[classes/:?]
+Caused by: java.lang.IllegalStateException: Returning argument name 'returnvalue' was not bound in advice arguments
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindExplicitArguments(AbstractAspectJAdvice.java:484) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindArgumentsByName(AbstractAspectJAdvice.java:435) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:386) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:309) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:149) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:113) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:213) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:144) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 13 more
+2022-10-19 10:21:26 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 30024 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:21:26 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:21:26 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.212 seconds (JVM running for 2.01)
+2022-10-19 10:21:26 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - Before advice called.
+2022-10-19 10:21:26 am [main] ERROR com.hnd.infinite.aspect.LoggingAspect - Service.WRONG_CREDENTIALS
+com.hnd.infinite.Exception.HnDBankException: Service.WRONG_CREDENTIALS
+	at com.hnd.infinite.service.CustomerLoginServiceImpl.authenticateCustomer(CustomerLoginServiceImpl.java:21) ~[classes/:?]
+	at com.hnd.infinite.service.CustomerLoginServiceImpl$$FastClassBySpringCGLIB$$cbe5eda0.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.23.jar:5.3.23]
+	at com.hnd.infinite.service.CustomerLoginServiceImpl$$EnhancerBySpringCGLIB$$c890656.authenticateCustomer(<generated>) ~[classes/:?]
+	at com.hnd.infinite.CustomerLoginController.authenticateCustomer(CustomerLoginController.java:15) ~[classes/:?]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.run(DemoSpringBootLoggingApplication.java:33) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.main(DemoSpringBootLoggingApplication.java:24) ~[classes/:?]
+2022-10-19 10:21:26 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After advice called.
+2022-10-19 10:21:26 am [main] ERROR com.hnd.infinite.DemoSpringBootLoggingApplication - Login denied. Invalid credentials.
+2022-10-19 10:31:10 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 2960 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:31:10 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:31:10 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.197 seconds (JVM running for 2.034)
+2022-10-19 10:31:10 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - around advice called.
+2022-10-19 10:31:10 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:32:59 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 13048 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:32:59 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:33:00 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.393 seconds (JVM running for 2.32)
+2022-10-19 10:33:00 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - around advice called.
+2022-10-19 10:33:00 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:54:25 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 25008 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:54:25 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:54:26 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.252 seconds (JVM running for 2.133)
+2022-10-19 10:54:26 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - around advice called.
+2022-10-19 10:54:26 am [main] ERROR com.hnd.infinite.aspect.LoggingAspect - Service.WRONG_CREDENTIALS
+com.hnd.infinite.Exception.HnDBankException: Service.WRONG_CREDENTIALS
+	at com.hnd.infinite.service.CustomerLoginServiceImpl.authenticateCustomer(CustomerLoginServiceImpl.java:21) ~[classes/:?]
+	at com.hnd.infinite.service.CustomerLoginServiceImpl$$FastClassBySpringCGLIB$$cbe5eda0.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-5.3.23.jar:5.3.23]
+	at com.hnd.infinite.aspect.LoggingAspect.around(LoggingAspect.java:26) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.23.jar:5.3.23]
+	at com.hnd.infinite.service.CustomerLoginServiceImpl$$EnhancerBySpringCGLIB$$d3aad494.authenticateCustomer(<generated>) ~[classes/:?]
+	at com.hnd.infinite.CustomerLoginController.authenticateCustomer(CustomerLoginController.java:15) ~[classes/:?]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.run(DemoSpringBootLoggingApplication.java:33) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.main(DemoSpringBootLoggingApplication.java:24) ~[classes/:?]
+2022-10-19 10:54:26 am [main] ERROR com.hnd.infinite.DemoSpringBootLoggingApplication - Login denied. Invalid credentials.
+2022-10-19 10:54:50 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 13232 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:54:50 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:54:51 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.218 seconds (JVM running for 2.062)
+2022-10-19 10:54:51 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - around advice called.
+2022-10-19 10:54:51 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After returning advice called.SUCCESS
+2022-10-19 10:54:51 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 10:56:20 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 6932 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 10:56:20 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 10:56:21 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.203 seconds (JVM running for 2.031)
+2022-10-19 10:56:21 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - around advice called.
+2022-10-19 10:56:21 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - Before advice called.
+2022-10-19 10:56:21 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After returning advice called.SUCCESS
+2022-10-19 10:56:21 am [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After advice called.
+2022-10-19 10:56:21 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 12:04:37 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 17280 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 12:04:37 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 12:04:37 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 0.918 seconds (JVM running for 1.561)
+2022-10-19 12:04:37 pm [main] INFO  com.hnd.infinite.aspect.LoggingAspect - Before advice called.
+2022-10-19 12:04:37 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 12:09:22 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 11136 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 12:09:22 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 12:09:23 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.564 seconds (JVM running for 2.226)
+2022-10-19 12:09:23 pm [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After advice called.
+2022-10-19 12:09:23 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 12:11:26 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 7992 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 12:11:26 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 12:11:26 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 0.902 seconds (JVM running for 1.507)
+2022-10-19 12:11:26 pm [main] INFO  com.hnd.infinite.aspect.LoggingAspect - After returning advice called.SUCCESS
+2022-10-19 12:11:26 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 12:11:50 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 2544 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 12:11:50 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 12:11:51 pm [main] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoSpringBootLoggingApplication': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'returnvalue1' was not bound in advice arguments
+2022-10-19 12:11:51 pm [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-19 12:11:51 pm [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoSpringBootLoggingApplication': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Returning argument name 'returnvalue1' was not bound in advice arguments
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.main(DemoSpringBootLoggingApplication.java:24) ~[classes/:?]
+Caused by: java.lang.IllegalStateException: Returning argument name 'returnvalue1' was not bound in advice arguments
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindExplicitArguments(AbstractAspectJAdvice.java:484) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindArgumentsByName(AbstractAspectJAdvice.java:435) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:386) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:309) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:149) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:113) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:213) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:144) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:110) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:95) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 13 more
+2022-10-19 12:12:28 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 3132 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 12:12:28 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 12:12:29 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.938 seconds (JVM running for 2.64)
+2022-10-19 12:12:29 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 12:13:29 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 17512 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 12:13:29 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 12:13:30 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 2.02 seconds (JVM running for 3.452)
+2022-10-19 12:13:30 pm [main] ERROR com.hnd.infinite.aspect.LoggingAspect - Service.WRONG_CREDENTIALS
+com.hnd.infinite.Exception.HnDBankException: Service.WRONG_CREDENTIALS
+	at com.hnd.infinite.service.CustomerLoginServiceImpl.authenticateCustomer(CustomerLoginServiceImpl.java:21) ~[classes/:?]
+	at com.hnd.infinite.service.CustomerLoginServiceImpl$$FastClassBySpringCGLIB$$cbe5eda0.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.23.jar:5.3.23]
+	at com.hnd.infinite.service.CustomerLoginServiceImpl$$EnhancerBySpringCGLIB$$5bf3c195.authenticateCustomer(<generated>) ~[classes/:?]
+	at com.hnd.infinite.CustomerLoginController.authenticateCustomer(CustomerLoginController.java:15) ~[classes/:?]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.run(DemoSpringBootLoggingApplication.java:33) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.hnd.infinite.DemoSpringBootLoggingApplication.main(DemoSpringBootLoggingApplication.java:24) ~[classes/:?]
+2022-10-19 12:13:30 pm [main] ERROR com.hnd.infinite.DemoSpringBootLoggingApplication - Login denied. Invalid credentials.
+2022-10-19 12:17:05 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 24308 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 12:17:05 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 12:17:07 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 2.188 seconds (JVM running for 2.911)
+2022-10-19 12:17:07 pm [main] INFO  com.hnd.infinite.aspect.LoggingAspect - around advice called.
+2022-10-19 12:17:07 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-19 12:18:33 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 15096 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 12:18:33 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 12:18:34 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 1.042 seconds (JVM running for 1.661)
+2022-10-19 12:18:34 pm [main] INFO  com.hnd.infinite.aspect.LoggingAspect - around advice called.
+2022-10-19 12:18:34 pm [main] ERROR com.hnd.infinite.DemoSpringBootLoggingApplication - Login denied. Invalid credentials.
+2022-10-19 12:19:50 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Starting DemoSpringBootLoggingApplication using Java 17.0.1 on Harshada with PID 23700 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring\infinite)
+2022-10-19 12:19:51 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-19 12:19:52 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Started DemoSpringBootLoggingApplication in 2.15 seconds (JVM running for 3.651)
+2022-10-19 12:19:52 pm [main] INFO  com.hnd.infinite.aspect.LoggingAspect - around advice called.
+2022-10-19 12:19:52 pm [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!

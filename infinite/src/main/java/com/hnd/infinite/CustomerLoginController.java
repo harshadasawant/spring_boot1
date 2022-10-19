@@ -11,7 +11,9 @@ public class CustomerLoginController {
     @Autowired
     private CustomerLoginService customerLoginService;
     public String authenticateCustomer(CustomerLoginDTO customerLogin) throws HnDBankException {
+        System.out.println("before service method");
         String b = customerLoginService.authenticateCustomer(customerLogin);
+        System.out.println("outside of method");
         return b;
     }
 }
