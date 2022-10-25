@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-@Repository(value = "customerRepository")
+@Repository(value = "customerRepositor")
 public class CustomerRepositoryImpl implements CustomerRepository {
     @PersistenceContext
     private EntityManager entityManager;
@@ -25,4 +25,25 @@ public class CustomerRepositoryImpl implements CustomerRepository {
         }
         return customerDTO;
     }
+    @Override
+    public void addCustomer(CustomerDTO customerDTO) {
+        Customer customer=new Customer();
+        customer.setCustomerId(customerDTO.getCustomerId());
+        customer.setDateOfBirth(customerDTO.getDateOfBirth());
+        customer.setEmailId(customerDTO.getEmailId());
+        customer.setName(customerDTO.getName());
+        customer.setCustomerType(customerDTO.getCustomerType());
+        entityManager.persist(customer);
+    }
+
+    @Override
+    public Integer updateCustomer(Integer customerId, String emailId) {
+        Integer customerIdReturned = null;
+        Customer customer = entityManager.find(Customer.class, customerId);
+        customer.setEmailId(emailId);
+        customerIdReturned = customer.getCustomerId();
+        return customerIdReturned;
+    }
+
+
 }

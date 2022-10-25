@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76a89d58-1d03-4b29-98aa-7a35c20b3822" name="Changes" comment="Persistance layer with ppt">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="76a89d58-1d03-4b29-98aa-7a35c20b3822" name="Changes" comment="updated ppt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/DemoSpringOrmReadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/DemoSpringOrmReadApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/repository/CustomerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/repository/CustomerRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinite/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Error.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,17 +53,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "D:/Training/Infinite_java/infinite_spring/infinite/src/main/ppt",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Training\Infinite_java\infinite_spring\infinite\src\main\ppt" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="DemoSpringOrmReadApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hnd.infinite.DemoSpringOrmReadApplication" />
@@ -98,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666675397092</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated ppt">
+      <created>1666676751497</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666676751497</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +129,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Persistance layer with ppt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Persistance layer with ppt" />
+    <MESSAGE value="updated ppt" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated ppt" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/repository/CustomerRepository.java</url>
+          <line>7</line>
+          <properties class="com.hnd.infinite.repository.CustomerRepository" method="updateCustomer">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -6,7 +6,11 @@ import com.hnd.infinite.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+
 @Service(value = "customerService")
+@Transactional
+
 public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
@@ -21,4 +25,22 @@ public class CustomerServiceImpl implements CustomerService {
         System.out.println("=="+customerDTO);
         return customerDTO;
     }
+
+    @Override
+    public void addCustomer(CustomerDTO customerDTO) throws HnDBankException {
+        if (customerRepository.getCustomer(customerDTO.getCustomerId()) != null) {
+            throw new HnDBankException("Service.CUSTOMER_ALREADY_EXISTS");
+        }
+        customerRepository.addCustomer(customerDTO);
+    }
+    @Override
+    public void updateCustomer(Integer customerId, String emailId) throws HnDBankException {
+        CustomerDTO customerDTO = customerRepository.getCustomer(customerId);
+        if (customerDTO == null) {
+            throw new HnDBankException("Service.CUSTOMER_UNAVAILABLE");
+        }
+        customerRepository.updateCustomer(customerId, emailId);
+    }
+
+
 }
