@@ -1,6 +1,7 @@
 package com.hnd.infinite;
 
 
+import com.hnd.infinite.Exception.HnDBankException;
 import com.hnd.infinite.dto.CustomerDTO;
 import com.hnd.infinite.service.CustomerServiceImpl;
 import org.apache.commons.logging.Log;
@@ -26,8 +27,8 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         getCustomer();
     }
-    public void getCustomer()  {
-        CustomerDTO customerDTO = customerService.getCustomer(1);
+    public void getCustomer() throws HnDBankException  {
+        CustomerDTO customerDTO = customerService.getCustomer(2);
         System.out.println(customerDTO);
         LOGGER.info("==="+customerDTO);
     }

@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76a89d58-1d03-4b29-98aa-7a35c20b3822" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/infinite/logs/Error.log" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/logs/Error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/CustomerLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/CustomerLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/DemoSpringBootLoggingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/DemoSpringBootLoggingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/Exception/HnDBankException.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/Exception/HnDBankException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/aspect/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/aspect/LoggingAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/repository/CustomerLoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/repository/CustomerLoginRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/repository/CustomerLoginRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/repository/CustomerLoginRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerLoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerLoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/dto/CustomerLoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/dto/CustomerLoginDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinite/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="76a89d58-1d03-4b29-98aa-7a35c20b3822" name="Changes" comment="Persistance layer with ppt">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/DemoSpringOrmReadApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/DemoSpringOrmReadApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infinite/src/main/java/com/hnd/infinite/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Error.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +23,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -57,10 +55,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
 }</component>
   <component name="RunManager">
@@ -92,6 +91,29 @@
       <option name="presentableId" value="Default" />
       <updated>1666236654693</updated>
     </task>
+    <task id="LOCAL-00001" summary="Persistance layer with ppt">
+      <created>1666675397092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666675397092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Persistance layer with ppt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Persistance layer with ppt" />
   </component>
 </project>

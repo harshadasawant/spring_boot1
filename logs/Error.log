@@ -34,3 +34,87 @@
 2022-10-25 10:46:00 am [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-10-25 10:46:00 am [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2022-10-25 10:46:00 am [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-10-25 11:10:07 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - Starting DemoSpringOrmReadApplication using Java 17.0.2 on Harshada with PID 18624 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring)
+2022-10-25 11:10:07 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-25 11:10:08 am [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-25 11:10:08 am [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2022-10-25 11:10:09 am [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-25 11:10:09 am [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-25 11:10:09 am [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-25 11:10:09 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-10-25 11:10:10 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-10-25 11:10:10 am [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-10-25 11:10:11 am [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-25 11:10:11 am [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 11:10:11 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - Started DemoSpringOrmReadApplication in 4.65 seconds (JVM running for 5.821)
+2022-10-25 11:10:11 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - ===CustomerDTO [customerId=1, emailId=martin@hnd.com, name=martin, dateOfBirth=1997-10-15]
+2022-10-25 11:10:11 am [main] INFO  com.hnd.infinite.DemoSpringBootLoggingApplication - Customer logged in successfully!!
+2022-10-25 11:10:11 am [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 11:10:11 am [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-10-25 11:10:11 am [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-10-25 11:10:31 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - Starting DemoSpringOrmReadApplication using Java 17.0.2 on Harshada with PID 10944 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring)
+2022-10-25 11:10:31 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-25 11:10:32 am [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-25 11:10:32 am [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 JPA repository interfaces.
+2022-10-25 11:10:33 am [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-25 11:10:33 am [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-25 11:10:33 am [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-25 11:10:33 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-10-25 11:10:34 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-10-25 11:10:34 am [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-10-25 11:10:35 am [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-25 11:10:35 am [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 11:10:35 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - Started DemoSpringOrmReadApplication in 4.184 seconds (JVM running for 4.942)
+2022-10-25 11:10:35 am [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-25 11:10:35 am [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.hnd.infinite.DemoSpringOrmReadApplication.main(DemoSpringOrmReadApplication.java:24) ~[classes/:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "com.hnd.infinite.dto.CustomerDTO.getCustomerId()" because "customerDTO" is null
+	at com.hnd.infinite.service.CustomerServiceImpl.getCustomer(CustomerServiceImpl.java:17) ~[classes/:?]
+	at com.hnd.infinite.DemoSpringOrmReadApplication.getCustomer(DemoSpringOrmReadApplication.java:31) ~[classes/:?]
+	at com.hnd.infinite.DemoSpringOrmReadApplication.run(DemoSpringOrmReadApplication.java:28) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.4.jar:2.7.4]
+	... 5 more
+2022-10-25 11:10:35 am [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 11:10:35 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-10-25 11:10:35 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-10-25 11:11:09 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - Starting DemoSpringOrmReadApplication using Java 17.0.2 on Harshada with PID 9900 (D:\Training\Infinite_java\infinite_spring\infinite\target\classes started by Harshada in D:\Training\Infinite_java\infinite_spring)
+2022-10-25 11:11:09 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-25 11:11:09 am [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-25 11:11:09 am [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-10-25 11:11:09 am [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-25 11:11:09 am [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-25 11:11:10 am [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-25 11:11:10 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-10-25 11:11:10 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-10-25 11:11:10 am [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-10-25 11:11:10 am [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-25 11:11:10 am [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 11:11:11 am [main] INFO  com.hnd.infinite.DemoSpringOrmReadApplication - Started DemoSpringOrmReadApplication in 2.19 seconds (JVM running for 2.925)
+2022-10-25 11:11:11 am [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-25 11:11:11 am [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.hnd.infinite.DemoSpringOrmReadApplication.main(DemoSpringOrmReadApplication.java:24) ~[classes/:?]
+Caused by: com.hnd.infinite.Exception.HnDBankException: Service.CUSTOMER_UNAVAILABLE
+	at com.hnd.infinite.service.CustomerServiceImpl.getCustomer(CustomerServiceImpl.java:19) ~[classes/:?]
+	at com.hnd.infinite.DemoSpringOrmReadApplication.getCustomer(DemoSpringOrmReadApplication.java:31) ~[classes/:?]
+	at com.hnd.infinite.DemoSpringOrmReadApplication.run(DemoSpringOrmReadApplication.java:28) ~[classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.4.jar:2.7.4]
+	... 5 more
+2022-10-25 11:11:11 am [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 11:11:11 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-10-25 11:11:11 am [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
