@@ -2,7 +2,7 @@ package com.hnd.infinite.service;
 
 import com.hnd.infinite.Exception.HnDBankException;
 import com.hnd.infinite.repository.CustomerLoginRepository;
-import dto.CustomerLoginDTO;
+import com.hnd.infinite.dto.CustomerLoginDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package com.hnd.infinite.repository;
 
-import dto.CustomerLoginDTO;
+import com.hnd.infinite.dto.CustomerLoginDTO;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;

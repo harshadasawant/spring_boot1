@@ -1,7 +1,7 @@
 package com.hnd.infinite;
 
 import com.hnd.infinite.Exception.HnDBankException;
-import dto.CustomerLoginDTO;
+import com.hnd.infinite.dto.CustomerLoginDTO;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;

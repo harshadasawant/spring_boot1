@@ -1,4 +1,4 @@
-package dto;
+package com.hnd.infinite.dto;
 
 public class CustomerLoginDTO {
     private String loginName;

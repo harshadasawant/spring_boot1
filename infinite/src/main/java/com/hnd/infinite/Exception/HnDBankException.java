@@ -5,6 +5,9 @@ public class HnDBankException extends Exception{
     public HnDBankException(String mesg){
         this.mesg = mesg;
     }
+    public HnDBankException(){
+
+    }
     public String getMessage(){
         return this.mesg;
     }
