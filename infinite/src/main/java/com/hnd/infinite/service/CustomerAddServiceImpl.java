@@ -49,6 +49,29 @@ public class CustomerAddServiceImpl implements CustomerAddService {
         customerRepository.save(customerAdd);
         return customerAdd.getCustomerId();
     }
+    @Override
+    public void updateAddress(Integer customerId, AddressDTO addressDTO) throws HnDBankException {
+        Optional<CustomerAdd> optional = customerRepository.findById(customerId);
+        CustomerAdd customer = optional.orElseThrow(() -> new HnDBankException("Service.INVALID_CUSTOMERID"));
+        Address address = customer.getAddress();
+        address.setCity(addressDTO.getCity());
+        address.setStreet(addressDTO.getStreet());
+    }
+
+    @Override
+    public void deleteCustomer(Integer customerId) throws HnDBankException {
+        Optional<CustomerAdd> optional = customerRepository.findById(customerId);
+        CustomerAdd customer = optional.orElseThrow(() -> new HnDBankException("Service.INVALID_CUSTOMERID"));
+        customerRepository.delete(customer);
+    }
+    @Override
+    public void deleteCustomerOnly(Integer customerId) throws HnDBankException {
+        Optional<CustomerAdd> optional = customerRepository.findById(customerId);
+        CustomerAdd customer = optional.orElseThrow(() -> new HnDBankException("Service.INVALID_CUSTOMERID"));
+        customer.setAddress(null);
+        customerRepository.delete(customer);
+    }
+
 
 
 

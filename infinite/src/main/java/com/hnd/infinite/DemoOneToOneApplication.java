@@ -27,7 +27,10 @@ public class DemoOneToOneApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 //        getCustomer();
-        addCustomer();
+//        addCustomer();
+//        updateAddress();
+//        deleteCustomer();
+        deleteCustomerOnly();
     }
 
     public void getCustomer() {
@@ -57,5 +60,37 @@ public class DemoOneToOneApplication implements CommandLineRunner {
             LOGGER.info(message);
         }
     }
+    public void updateAddress() {
+        try {
+            AddressDTO addressDTO = new AddressDTO();
+            addressDTO.setCity("Rochester");
+            addressDTO.setStreet("12 Tim Street");
+            customerService.updateAddress(1, addressDTO);
+            LOGGER.info("\n" + environment.getProperty("UserInterface.CUSTOMER_UPDATED"));
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(), "Some exception occurred. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+    public void deleteCustomer() {
+        try {
+            customerService.deleteCustomer(1);
+            LOGGER.info("\n" + environment.getProperty("UserInterface.CUSTOMER_ADDRESS_DELETED"));
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(), "Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+    public void deleteCustomerOnly() {
+        try {
+            customerService.deleteCustomerOnly(2);
+            LOGGER.info("\n" + environment.getProperty("UserInterface.CUSTOMER_DELETED"));
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(),
+                    "Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+
 
 }
