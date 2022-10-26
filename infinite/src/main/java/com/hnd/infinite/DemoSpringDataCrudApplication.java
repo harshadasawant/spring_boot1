@@ -27,7 +27,11 @@ public class DemoSpringDataCrudApplication implements CommandLineRunner {
     }
 
     public void run(String... args) throws Exception {
-        addCustomer();
+//        addCustomer();
+//         getCustomer();
+//         findAllCustomers();
+        updateCustomer();
+
     }
     public void addCustomer() {
         CustomerDTO customer = new CustomerDTO();
@@ -44,6 +48,36 @@ public class DemoSpringDataCrudApplication implements CommandLineRunner {
                         "Something went wrong. Please check log file for more details."));
         }
     }
+    public void getCustomer() {
+        try {
+            CustomerDTO customer = customerService.getCustomer(3);
+            LOGGER.info(customer);
+        } catch (Exception e) {
+            if (e.getMessage() != null)
+                LOGGER.info(environment.getProperty(e.getMessage(),
+                        "Something went wrong. Please check log file for more details."));
+        }
+    }
+    public void findAllCustomers() {
+        try {
+            customerService.findAll().forEach(LOGGER::info);
+        } catch (Exception e) {
+            if (e.getMessage() != null)
+                LOGGER.info(environment.getProperty(e.getMessage(),
+                        "Something went wrong. Please check log file for more details."));
+        }
+    }
+    public void updateCustomer() {
+        try {
+            customerService.updateCustomer(2, "tim01@hnd.com");
+            LOGGER.info(environment.getProperty("UserInterface.UPDATE_SUCCESS"));
+        } catch (Exception e) {
+            if (e.getMessage() != null)
+                LOGGER.info(environment.getProperty(e.getMessage(),
+                        "Something went wrong. Please check log file for more details."));
+        }
+    }
+
 
 
 }
