@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.List;
 
 @Service(value = "customerService")
 @Transactional
@@ -42,32 +41,6 @@ public class CustomerServiceImpl implements CustomerService {
         }
         customerRepository.updateCustomer(customerId, emailId);
     }
-
-    @Override
-    public void deleteCustomer(Integer customerId) throws HnDBankException {
-        CustomerDTO customerDTO = customerRepository.getCustomer(customerId);
-        if (customerDTO == null) {
-            throw new HnDBankException("Service.CUSTOMER_UNAVAILABLE");
-        }
-        customerRepository.deleteCustomer(customerId);
-    }
-    @Override
-    public List<CustomerDTO> getCustomerdetails() throws HnDBankException {
-        return customerRepository.getCustomerdetails();
-    }
-    @Override
-    public List<CustomerDTO> getCustomerdetailsParam(int custId) throws HnDBankException {
-        return customerRepository.getCustomerdetailsParam(custId);
-    }
-    @Override
-    public List<Object[]> getCustomerNameAndDob() throws HnDBankException {
-        return customerRepository.getCustomerNameAndDob();
-    }
-    @Override
-    public List<String> getCustomerName() throws HnDBankException {
-        return customerRepository.getCustomerName();
-    }
-
 
 
 }
