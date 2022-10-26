@@ -14,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @SpringBootApplication
 public class DemoSpringOrmReadApplication implements CommandLineRunner {
@@ -30,7 +31,12 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 //        getCustomer();
 //        addCustomer();
-        updateCustomer();
+//        updateCustomer();
+//        deleteCustomer();
+        getCustomerdetailsParam(1);
+        getCustomerdetails();
+        getCustomerNameAndDob();
+        getCustomerNames();
     }
     public void addCustomer() {
         CustomerDTO customerDTO = new CustomerDTO();
@@ -51,13 +57,13 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
     }
 
     public void getCustomer() throws HnDBankException  {
-       try {
-           CustomerDTO customerDTO = customerService.getCustomer(2);
-           System.out.println(customerDTO);
-           LOGGER.info("===" + customerDTO);
-       }catch(HnDBankException exception){
-        LOGGER.error(environment.getProperty(exception.getMessage()));
-    }
+        try {
+            CustomerDTO customerDTO = customerService.getCustomer(2);
+            System.out.println(customerDTO);
+            LOGGER.info("===" + customerDTO);
+        }catch(HnDBankException exception){
+            LOGGER.error(environment.getProperty(exception.getMessage()));
+        }
     }
     public void updateCustomer() {
         try {
@@ -69,5 +75,70 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
                         "Something went wrong. Please check log file for more details."));
         }
     }
+    public void deleteCustomer() {
+        try {
+            customerService.deleteCustomer(1);
+            LOGGER.info(environment.getProperty("UserInterface.DELETE_SUCCESS"));
+        } catch (Exception e) {
+            if (e.getMessage() != null)
+                LOGGER.info(environment.getProperty(e.getMessage(),
+                        "Something went wrong. Please check log file for more details."));
+        }
+    }
+
+    public  void getCustomerdetails(){
+        try {
+            List<CustomerDTO> customerDTOs = customerService.getCustomerdetails();
+
+            for (CustomerDTO customerDTO : customerDTOs) {
+                LOGGER.info(customerDTO);
+            }
+            LOGGER.info("\n");
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+    public  void getCustomerdetailsParam(int custId){
+        try {
+            List<CustomerDTO> customerDTOs = customerService.getCustomerdetailsParam(custId);
+
+            for (CustomerDTO customerDTO : customerDTOs) {
+                LOGGER.info(customerDTO);
+            }
+            LOGGER.info("\n");
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+    public  void getCustomerNameAndDob() {
+        try {
+            List<Object[]> objects = customerService.getCustomerNameAndDob();
+
+            for (Object[] object : objects) {
+                LOGGER.info(object[0]+"\t\t"+object[1]);
+            }
+            LOGGER.info("\n");
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info( message);
+        }
+    }
+    public  void getCustomerNames() {
+        try {
+            List<String> customerNames = customerService.getCustomerName();
+
+            for (String name  : customerNames) {
+                LOGGER.info(name);
+            }
+            LOGGER.info("\n");
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info( message);
+        }
+    }
+
+
 
 }
