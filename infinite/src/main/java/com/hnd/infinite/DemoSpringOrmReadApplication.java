@@ -14,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @SpringBootApplication
 public class DemoSpringOrmReadApplication implements CommandLineRunner {
@@ -31,7 +32,10 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
 //        getCustomer();
 //        addCustomer();
 //        updateCustomer();
-        deleteCustomer();
+//        deleteCustomer();
+        getCustomerdetails();
+        getCustomerNameAndDob();
+        getCustomerNames();
     }
     public void addCustomer() {
         CustomerDTO customerDTO = new CustomerDTO();
@@ -80,5 +84,47 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
                         "Something went wrong. Please check log file for more details."));
         }
     }
+
+    public  void getCustomerdetails(){
+        try {
+            List<CustomerDTO> customerDTOs = customerService.getCustomerdetails();
+
+            for (CustomerDTO customerDTO : customerDTOs) {
+                LOGGER.info(customerDTO);
+            }
+            LOGGER.info("\n");
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+    public  void getCustomerNameAndDob() {
+        try {
+            List<Object[]> objects = customerService.getCustomerNameAndDob();
+
+            for (Object[] object : objects) {
+                LOGGER.info(object[0]+"\t\t"+object[1]);
+            }
+            LOGGER.info("\n");
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info( message);
+        }
+    }
+    public  void getCustomerNames() {
+        try {
+            List<String> customerNames = customerService.getCustomerName();
+
+            for (String name  : customerNames) {
+                LOGGER.info(name);
+            }
+            LOGGER.info("\n");
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info( message);
+        }
+    }
+
+
 
 }

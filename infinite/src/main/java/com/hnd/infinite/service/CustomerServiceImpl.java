@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service(value = "customerService")
 @Transactional
@@ -49,6 +50,18 @@ public class CustomerServiceImpl implements CustomerService {
             throw new HnDBankException("Service.CUSTOMER_UNAVAILABLE");
         }
         customerRepository.deleteCustomer(customerId);
+    }
+    @Override
+    public List<CustomerDTO> getCustomerdetails() throws HnDBankException {
+        return customerRepository.getCustomerdetails();
+    }
+    @Override
+    public List<Object[]> getCustomerNameAndDob() throws HnDBankException {
+        return customerRepository.getCustomerNameAndDob();
+    }
+    @Override
+    public List<String> getCustomerName() throws HnDBankException {
+        return customerRepository.getCustomerName();
     }
 
 
