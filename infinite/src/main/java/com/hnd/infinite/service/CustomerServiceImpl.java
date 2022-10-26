@@ -42,5 +42,15 @@ public class CustomerServiceImpl implements CustomerService {
         customerRepository.updateCustomer(customerId, emailId);
     }
 
+    @Override
+    public void deleteCustomer(Integer customerId) throws HnDBankException {
+        CustomerDTO customerDTO = customerRepository.getCustomer(customerId);
+        if (customerDTO == null) {
+            throw new HnDBankException("Service.CUSTOMER_UNAVAILABLE");
+        }
+        customerRepository.deleteCustomer(customerId);
+    }
+
+
 
 }

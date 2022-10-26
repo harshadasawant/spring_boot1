@@ -30,7 +30,8 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 //        getCustomer();
 //        addCustomer();
-        updateCustomer();
+//        updateCustomer();
+        deleteCustomer();
     }
     public void addCustomer() {
         CustomerDTO customerDTO = new CustomerDTO();
@@ -63,6 +64,16 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
         try {
             customerService.updateCustomer(1, "martin01@hnd.com");
             LOGGER.info(environment.getProperty("UserInterface.UPDATE_SUCCESS"));
+        } catch (Exception e) {
+            if (e.getMessage() != null)
+                LOGGER.info(environment.getProperty(e.getMessage(),
+                        "Something went wrong. Please check log file for more details."));
+        }
+    }
+    public void deleteCustomer() {
+        try {
+            customerService.deleteCustomer(1);
+            LOGGER.info(environment.getProperty("UserInterface.DELETE_SUCCESS"));
         } catch (Exception e) {
             if (e.getMessage() != null)
                 LOGGER.info(environment.getProperty(e.getMessage(),

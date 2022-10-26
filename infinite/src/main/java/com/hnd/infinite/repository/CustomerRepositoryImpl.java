@@ -44,6 +44,13 @@ public class CustomerRepositoryImpl implements CustomerRepository {
         customerIdReturned = customer.getCustomerId();
         return customerIdReturned;
     }
+    @Override
+    public Integer deleteCustomer(Integer customerId) {
+        Customer customer = entityManager.find(Customer.class, customerId);
+        entityManager.remove(customer);
+        Integer customerIdReturned = customer.getCustomerId();
+        return customerIdReturned;
+    }
 
 
 }

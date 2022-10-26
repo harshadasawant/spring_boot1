@@ -8,5 +8,6 @@ public interface CustomerService {
     public CustomerDTO getCustomer(Integer customerId) throws HnDBankException;
     public void addCustomer(CustomerDTO customerDTO) throws HnDBankException;
     public void updateCustomer(Integer customerId, String emailId) throws HnDBankException;
+    public void deleteCustomer(Integer customerId) throws HnDBankException;
 
 }
