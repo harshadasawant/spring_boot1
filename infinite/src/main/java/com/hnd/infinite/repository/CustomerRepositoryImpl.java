@@ -74,13 +74,13 @@ public class CustomerRepositoryImpl implements CustomerRepository {
     public List<CustomerDTO> getCustomerdetailsParam(int custId) {
         List<CustomerDTO> customerDTOs = null;
         // Comment the below 3 lines while using named parameter
-//        String queryString = "select c from Customer c where c.customerId=?1";
-//        Query query = entityManager.createQuery(queryString);
-//        query.setParameter(1, custId);
+        String queryString = "select c from Customer c where c.customerId=?1";
+        Query query = entityManager.createQuery(queryString);
+        query.setParameter(1, custId);
 
-        String queryString ="select c from Customer c where c.customerId=:customerId"; Query
-                query=entityManager.createQuery(queryString);
-        query.setParameter("customerId", custId);
+//        String queryString ="select c from Customer c where c.customerId=:customerId"; Query
+//                query=entityManager.createQuery(queryString);
+//        query.setParameter("customerId", custId);
 
         List<Customer> customers = query.getResultList();
         customerDTOs = new ArrayList<>();
@@ -102,7 +102,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
         return result;
     }
     public List<Object[]> getCustomerAggr() {
-        String queryString = "select count(c), c.name from Customer c group by c.name having c.name = 'harshada'";
+        String queryString = "select count(c), c.name from Customer c group by c.name";
         Query query = entityManager.createQuery(queryString);
         List<Object[]> result = query.getResultList();
         System.out.println(result);

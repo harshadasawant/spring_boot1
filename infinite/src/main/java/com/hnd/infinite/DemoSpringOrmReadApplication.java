@@ -33,11 +33,11 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
 //        addCustomer();
 //        updateCustomer();
 //        deleteCustomer();
-//        getCustomerdetailsParam(1);
+//        getCustomerdetailsParam(2);
 //        getCustomerdetails();
 //        getCustomerNameAndDob();
 //        getCustomerNames();
-        getCustomerAggr();
+//        getCustomerAggr();
     }
     public void addCustomer() {
         CustomerDTO customerDTO = new CustomerDTO();
