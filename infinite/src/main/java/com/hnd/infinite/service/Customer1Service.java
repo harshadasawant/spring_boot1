@@ -13,4 +13,5 @@ public interface Customer1Service {
     public void deleteCustomer(Integer customerId)throws HnDBankException;
 
 
+    void findBy(String emailId, int custId) throws HnDBankException;
 }

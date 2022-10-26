@@ -1,5 +1,6 @@
 package com.hnd.infinite;
 
+import com.hnd.infinite.Exception.HnDBankException;
 import com.hnd.infinite.dto.CustomerDTO;
 import com.hnd.infinite.service.Customer1ServiceImpl;
 import com.hnd.infinite.service.CustomerServiceImpl;
@@ -31,7 +32,8 @@ public class DemoSpringDataCrudApplication implements CommandLineRunner {
 //         getCustomer();
 //         findAllCustomers();
 //        updateCustomer();
-        deleteCustomer();
+//        deleteCustomer();
+        findBy();
     }
     public void addCustomer() {
         CustomerDTO customer = new CustomerDTO();
@@ -87,7 +89,15 @@ public class DemoSpringDataCrudApplication implements CommandLineRunner {
                         "Something went wrong. Please check log file for more details."));
         }
     }
-
+    public void findBy() {
+  try{
+     customerService.findBy("harry@hnd.com", 4);
+    } catch (Exception e) {
+        if (e.getMessage() != null)
+            LOGGER.info(environment.getProperty(e.getMessage(),
+                    "Something went wrong. Please check log file for more details."));
+    }
+    }
 
 
 }

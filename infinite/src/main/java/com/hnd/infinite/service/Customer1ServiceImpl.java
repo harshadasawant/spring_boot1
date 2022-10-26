@@ -73,7 +73,20 @@ public class Customer1ServiceImpl implements Customer1Service {
         customerRespository.deleteById(customerId);
     }
 
+    @Override
+    public void findBy(String emailId, int custId) throws HnDBankException {
+        List<Customer> custlist = customerRespository.findByEmailId(emailId);
+        System.out.println(custlist);
+        List<String> name = customerRespository.findNameByEmailId(emailId);
+        System.out.println(name);
 
+        customerRespository.updateCustomerEmailId("h1234@gmail.com", custId);
+
+//        optional.orElseThrow(() -> new HnDBankException("Service.CUSTOMER_NOT_FOUND"));
+
+
+
+    }
 
 
 }
