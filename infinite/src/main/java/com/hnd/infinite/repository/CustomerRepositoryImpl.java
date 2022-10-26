@@ -101,6 +101,13 @@ public class CustomerRepositoryImpl implements CustomerRepository {
         List<Object[]> result = query.getResultList();
         return result;
     }
+    public List<Object[]> getCustomerAggr() {
+        String queryString = "select count(c), c.name from Customer c group by c.name having c.name = 'harshada'";
+        Query query = entityManager.createQuery(queryString);
+        List<Object[]> result = query.getResultList();
+        System.out.println(result);
+        return result;
+    }
     public List<String> getCustomerName() {
         List<String> customerNames = null;
         String queryString = "select c.name from Customer c";

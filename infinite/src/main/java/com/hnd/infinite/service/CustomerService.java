@@ -16,6 +16,7 @@ public interface CustomerService {
     public List<CustomerDTO> getCustomerdetailsParam(int custId) throws HnDBankException;
     public List<Object[]> getCustomerNameAndDob() throws HnDBankException;
     public List<String> getCustomerName() throws HnDBankException;
+    public List<Object[]> getCustomerAggr() throws HnDBankException;
 
 
 }

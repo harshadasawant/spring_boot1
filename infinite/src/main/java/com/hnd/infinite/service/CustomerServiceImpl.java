@@ -63,6 +63,12 @@ public class CustomerServiceImpl implements CustomerService {
     public List<Object[]> getCustomerNameAndDob() throws HnDBankException {
         return customerRepository.getCustomerNameAndDob();
     }
+
+    @Override
+    public List<Object[]> getCustomerAggr() throws HnDBankException {
+        System.out.println(customerRepository.getCustomerAggr());
+        return customerRepository.getCustomerAggr();
+    }
     @Override
     public List<String> getCustomerName() throws HnDBankException {
         return customerRepository.getCustomerName();

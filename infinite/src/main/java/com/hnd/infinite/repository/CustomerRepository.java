@@ -14,6 +14,7 @@ public interface CustomerRepository {
     public List<CustomerDTO> getCustomerdetailsParam(int custId);
     public List<Object[]> getCustomerNameAndDob();
     public List<String> getCustomerName();
+    public List<Object[]> getCustomerAggr();
 
 
 
