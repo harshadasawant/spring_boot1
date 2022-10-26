@@ -33,6 +33,7 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
 //        addCustomer();
 //        updateCustomer();
 //        deleteCustomer();
+        getCustomerdetailsParam(1);
         getCustomerdetails();
         getCustomerNameAndDob();
         getCustomerNames();
@@ -88,6 +89,19 @@ public class DemoSpringOrmReadApplication implements CommandLineRunner {
     public  void getCustomerdetails(){
         try {
             List<CustomerDTO> customerDTOs = customerService.getCustomerdetails();
+
+            for (CustomerDTO customerDTO : customerDTOs) {
+                LOGGER.info(customerDTO);
+            }
+            LOGGER.info("\n");
+        } catch (Exception e) {
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+    public  void getCustomerdetailsParam(int custId){
+        try {
+            List<CustomerDTO> customerDTOs = customerService.getCustomerdetailsParam(custId);
 
             for (CustomerDTO customerDTO : customerDTOs) {
                 LOGGER.info(customerDTO);

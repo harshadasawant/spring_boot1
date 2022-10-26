@@ -72,8 +72,32 @@ public class CustomerRepositoryImpl implements CustomerRepository {
         return customerDTOs;
     }
 
+    public List<CustomerDTO> getCustomerdetailsParam(int custId) {
+        List<CustomerDTO> customerDTOs = null;
+        // Comment the below 3 lines while using named parameter
+//        String queryString = "select c from Customer c where c.customerId=?1";
+//        Query query = entityManager.createQuery(queryString);
+//        query.setParameter(1, custId);
+
+         String queryString ="select c from Customer c where c.customerId=:customerId"; Query
+         query=entityManager.createQuery(queryString);
+         query.setParameter("customerId", custId);
+
+        List<Customer> customers = query.getResultList();
+        customerDTOs = new ArrayList<>();
+        for (Customer customerEntity : customers) {
+            CustomerDTO customerDTO = new CustomerDTO();
+            customerDTO.setCustomerId(customerEntity.getCustomerId());
+            customerDTO.setDateOfBirth(customerEntity.getDateOfBirth());
+            customerDTO.setEmailId(customerEntity.getEmailId());
+            customerDTO.setName(customerEntity.getName());
+            customerDTO.setCustomerType(customerEntity.getCustomerType());
+            customerDTOs.add(customerDTO);
+        }
+        return customerDTOs;
+    }
     public List<Object[]> getCustomerNameAndDob() {
-        String queryString = "select c.name,c.dateOfBirth from Customer c";
+        String queryString = "select distinct c.name,c.dateOfBirth from Customer c";
         Query query = entityManager.createQuery(queryString);
         List<Object[]> result = query.getResultList();
         return result;

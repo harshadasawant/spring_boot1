@@ -13,6 +13,7 @@ public interface CustomerService {
     public void deleteCustomer(Integer customerId) throws HnDBankException;
 
     public List<CustomerDTO> getCustomerdetails() throws HnDBankException;
+    public List<CustomerDTO> getCustomerdetailsParam(int custId) throws HnDBankException;
     public List<Object[]> getCustomerNameAndDob() throws HnDBankException;
     public List<String> getCustomerName() throws HnDBankException;
 

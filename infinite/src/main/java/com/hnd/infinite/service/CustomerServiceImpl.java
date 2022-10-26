@@ -56,6 +56,10 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.getCustomerdetails();
     }
     @Override
+    public List<CustomerDTO> getCustomerdetailsParam(int custId) throws HnDBankException {
+        return customerRepository.getCustomerdetailsParam(custId);
+    }
+    @Override
     public List<Object[]> getCustomerNameAndDob() throws HnDBankException {
         return customerRepository.getCustomerNameAndDob();
     }

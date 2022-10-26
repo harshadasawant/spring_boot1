@@ -11,6 +11,7 @@ public interface CustomerRepository {
     public Integer deleteCustomer(Integer customerId);
 
     public List<CustomerDTO> getCustomerdetails();
+    public List<CustomerDTO> getCustomerdetailsParam(int custId);
     public List<Object[]> getCustomerNameAndDob();
     public List<String> getCustomerName();
 
