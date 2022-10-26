@@ -10,5 +10,7 @@ public interface Customer1Service {
     public CustomerDTO getCustomer(Integer customerId) throws HnDBankException;
     public List<CustomerDTO> findAll() throws HnDBankException;
     public void updateCustomer(Integer customerId, String emailId) throws HnDBankException;
+    public void deleteCustomer(Integer customerId)throws HnDBankException;
+
 
 }

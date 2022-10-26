@@ -66,6 +66,14 @@ public class Customer1ServiceImpl implements Customer1Service {
         customer.setEmailId(emailId);
     }
 
+    @Override
+    public void deleteCustomer(Integer customerId) throws HnDBankException {
+        Optional<Customer> optional = customerRespository.findById(customerId);
+        optional.orElseThrow(() -> new HnDBankException("Service.CUSTOMER_NOT_FOUND"));
+        customerRespository.deleteById(customerId);
+    }
+
+
 
 
 }

@@ -30,8 +30,8 @@ public class DemoSpringDataCrudApplication implements CommandLineRunner {
 //        addCustomer();
 //         getCustomer();
 //         findAllCustomers();
-        updateCustomer();
-
+//        updateCustomer();
+        deleteCustomer();
     }
     public void addCustomer() {
         CustomerDTO customer = new CustomerDTO();
@@ -71,6 +71,16 @@ public class DemoSpringDataCrudApplication implements CommandLineRunner {
         try {
             customerService.updateCustomer(2, "tim01@hnd.com");
             LOGGER.info(environment.getProperty("UserInterface.UPDATE_SUCCESS"));
+        } catch (Exception e) {
+            if (e.getMessage() != null)
+                LOGGER.info(environment.getProperty(e.getMessage(),
+                        "Something went wrong. Please check log file for more details."));
+        }
+    }
+    public void deleteCustomer() {
+        try {
+            customerService.deleteCustomer(3);
+            LOGGER.info(environment.getProperty("UserInterface.DELETE_SUCCESS"));
         } catch (Exception e) {
             if (e.getMessage() != null)
                 LOGGER.info(environment.getProperty(e.getMessage(),
