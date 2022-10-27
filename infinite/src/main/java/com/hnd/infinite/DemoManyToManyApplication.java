@@ -30,7 +30,12 @@ public class DemoManyToManyApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        addCustomerAndService();
+        //		addCustomerAndService();
+//		addExistingServiceToExistingCustomer();
+		deallocateServiceForExistingCustomer();
+//		deleteCustomer();
+//        getCustomer();
+
     }
 
     public void addCustomerAndService() {
@@ -53,4 +58,56 @@ public class DemoManyToManyApplication implements CommandLineRunner {
             LOGGER.info(message);
         }
     }
+    public void addExistingServiceToExistingCustomer() {
+        try{
+            Integer customerId=1004;
+            List<Integer> serviceIds=new ArrayList<>();
+            serviceIds.add(3001);
+            serviceIds.add(3003);
+            bankService.addExistingServiceToExistingCustomer(customerId, serviceIds);
+            LOGGER.info(environment.getProperty("UserInterface.CUSTOMER_SERVICE_ALLOCATION_SUCCESS"));
+
+        }catch(Exception e){
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+    public void deallocateServiceForExistingCustomer() {
+        try{
+            Integer customerId=1002;
+            List<Integer> serviceIds=new ArrayList<>();
+            serviceIds.add(3003);
+            bankService.deallocateServiceForExistingCustomer(customerId, serviceIds);
+            LOGGER.info(environment.getProperty("UserInterface.CUSTOMER_SERVICE_DEALLOCATION_SUCCESS"));
+        }catch(Exception e){
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+    public void deleteCustomer() {
+        try{
+            Integer customerId=1001;
+            bankService.deleteCustomer(customerId);
+            LOGGER.info(environment.getProperty("UserInterface.CUSTOMER_DELETE_SUCCESS"));
+        }catch(Exception e){
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
+    public void getCustomer() {
+        try{
+            Integer customerId=1004;
+            CustomersDTO customerDTO=bankService.getCustomer(customerId);
+            LOGGER.info(customerDTO);
+            Set<ServicesDTO> serviceList=customerDTO.getBankServices();
+            if(serviceList==null){
+                LOGGER.info(environment.getProperty("UserInterface.SERVICE_UNAVAILABLE"));
+            }
+        }catch(Exception e){
+            String message = environment.getProperty(e.getMessage(),"Some exception occured. Please check log file for more details!!");
+            LOGGER.info(message);
+        }
+    }
 }
+
+

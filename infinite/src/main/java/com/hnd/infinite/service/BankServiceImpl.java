@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 
@@ -50,4 +52,72 @@ public class BankServiceImpl implements BankService {
         customerId = customer.getCustomerId();
         return customerId;
     }
+
+    @Override
+    public void addExistingServiceToExistingCustomer(Integer customerId,
+                                                     List<Integer> serviceIds) throws HnDBankException {
+
+        Optional<Customers> optional = customerRepository.findById(customerId);
+        Customers customer = optional.orElseThrow(() -> new HnDBankException("Service.CUSTOMER_UNAVAILABLE"));
+
+        for(Integer serviceId : serviceIds) {
+            Optional<Services> optional1 = servicesRepository.findById(serviceId);
+            Services service = optional1.orElseThrow(() -> new HnDBankException("Service.SERVICE_UNAVAILABLE"));
+            if(!customer.getBankServices().contains(service)) {
+                customer.getBankServices().add(service);
+            }
+        }
+    }
+
+    @Override
+    public void deallocateServiceForExistingCustomer(Integer customerId,
+                                                     List<Integer> serviceIds) throws HnDBankException {
+
+        Optional<Customers> optional = customerRepository.findById(customerId);
+        Customers customer = optional.orElseThrow(() -> new HnDBankException("Service.CUSTOMER_UNAVAILABLE"));
+        Set<Services> bankServices = customer.getBankServices();
+        for(Integer serviceId:serviceIds) {
+            Optional<Services> optional1 = servicesRepository.findById(serviceId);
+            if(optional1.isPresent()) {
+                Services service = optional1.get();
+                bankServices.remove(service);
+            }
+        }
+    }
+    @Override
+    public void deleteCustomer(Integer customerId) throws HnDBankException {
+
+        Optional<Customers> optional = customerRepository.findById(customerId);
+        Customers customer = optional.orElseThrow(() -> new HnDBankException("Service.CUSTOMER_CANNOT_DELETE"));
+        customer.setBankServices(null);
+        customerRepository.delete(customer);
+
+    }
+
+
+    @Override
+    public CustomersDTO getCustomer(Integer customerId) throws HnDBankException {
+
+        Optional<Customers> optional = customerRepository.findById(customerId);
+        Customers customer = optional.orElseThrow(() -> new HnDBankException("Service.CUSTOMER_UNAVAILABLE"));
+        CustomersDTO customerDTO = new CustomersDTO();
+        customerDTO.setCustomerId(customer.getCustomerId());
+        customerDTO.setDateOfBirth(customer.getDateOfBirth());
+        customerDTO.setEmailId(customer.getEmailId());
+        customerDTO.setName(customer.getName());
+        Set<Services> bankServicesSet = customer.getBankServices();
+        Set<ServicesDTO> bankServicesDTO = new LinkedHashSet<>();
+        if (bankServicesSet != null && !bankServicesSet.isEmpty()) {
+            for (Services bankServices : bankServicesSet) {
+                ServicesDTO servicesDTO = new ServicesDTO();
+                servicesDTO.setServiceId(bankServices.getServiceId());
+                servicesDTO.setServiceName(bankServices.getServiceName());
+                servicesDTO.setServiceCost(bankServices.getServiceCost());
+                bankServicesDTO.add(servicesDTO);
+            }
+            customerDTO.setBankServices(bankServicesDTO);
+        }
+        return customerDTO;
+    }
+
 }
