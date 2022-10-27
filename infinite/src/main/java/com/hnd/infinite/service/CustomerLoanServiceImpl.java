@@ -6,6 +6,7 @@ import com.hnd.infinite.dto.CustomerDTO;
 import com.hnd.infinite.dto.LoanDTO;
 import com.hnd.infinite.entity.Customer;
 import com.hnd.infinite.entity.Loan;
+import com.hnd.infinite.repository.Customer1Repository;
 import com.hnd.infinite.repository.CustomerRepository;
 import com.hnd.infinite.repository.LoanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class CustomerLoanServiceImpl implements CustomerLoanService {
     @Autowired
-    private CustomerRepository customerRepository;
+    private Customer1Repository customerRepository;
 
     @Autowired
     private LoanRepository loanRepository;
@@ -41,5 +42,50 @@ public class CustomerLoanServiceImpl implements CustomerLoanService {
         }
         return loanDTO;
     }
-}
+    @Override
+    public Integer addLoanAndCustomer(LoanDTO loanDTO) throws HnDBankException {
+        Loan loan = new Loan();
+        loan.setAmount(loanDTO.getAmount());
+        loan.setIssueDate(loanDTO.getLoanIssueDate());
+        loan.setStatus("open");
+        CustomerDTO customerDTO = loanDTO.getCustomer();
+        Customer customer = new Customer();
+        customer.setCustomerId(customerDTO.getCustomerId());
+        customer.setDateOfBirth(customerDTO.getDateOfBirth());
+        customer.setEmailId(customerDTO.getEmailId());
+        customer.setName(customerDTO.getName());
+        loan.setCustomer(customer);
+        loanRepository.save(loan);
+        return loan.getLoanId();
+    }
+
+    @Override
+    public Integer sanctionLoanToExistingCustomer(Integer customerId, LoanDTO loanDTO) throws HnDBankException {
+        Loan loan = new Loan();
+        loan.setAmount(loanDTO.getAmount());
+        loan.setIssueDate(loanDTO.getLoanIssueDate());
+        loan.setStatus(loanDTO.getStatus());
+        Optional<Customer> optional = customerRepository.findById(customerId);
+        Customer customer = optional.orElseThrow(()->new HnDBankException("Service.CUSTOMER_UNAVAILABLE"));
+        loan.setCustomer(customer);
+        loanRepository.save(loan);
+        return loan.getLoanId();
+    }
+
+    @Override
+    public void closeLoan(Integer loanId) throws HnDBankException {
+        Optional<Loan> optional = loanRepository.findById(loanId);
+        Loan loan = optional.orElseThrow(()->new HnDBankException("Service.LOAN_UNAVAILABLE"));
+        loan.setStatus("Closed");
+    }
+
+    public void deleteLoan(Integer loanId) throws HnDBankException{
+        Optional<Loan> optional = loanRepository.findById(loanId);
+        Loan loan = optional.orElseThrow(()->new HnDBankException("Service.LOAN_UNAVAILABLE"));
+        loan.setCustomer(null);
+        loanRepository.delete(loan);
+    }
+
+
+    }
 
