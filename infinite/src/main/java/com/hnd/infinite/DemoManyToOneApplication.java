@@ -52,10 +52,10 @@ public class DemoManyToOneApplication implements CommandLineRunner {
             loanDTO.setLoanIssueDate(LocalDate.of(2015, 11, 1));
             loanDTO.setStatus("Open");
             CustomerDTO customerDTO=new CustomerDTO();
-            customerDTO.setCustomerId(1007);
+            customerDTO.setCustomerId(1008);
             customerDTO.setDateOfBirth(LocalDate.of(1992, 1, 10));
-            customerDTO.setEmailId("peter@hnd.com");
-            customerDTO.setName("Peter");
+            customerDTO.setEmailId("harshada@hnd.com");
+            customerDTO.setName("mharshada");
             loanDTO.setCustomer(customerDTO);
             Integer loanId=customerLoanService.addLoanAndCustomer(loanDTO);
             LOGGER.info(environment.getProperty("UserInterface.NEW_LOAN_CUSTOMER_SUCCESS")+loanId);
@@ -68,7 +68,7 @@ public class DemoManyToOneApplication implements CommandLineRunner {
         try{
 
             LoanDTO loanDTO=new LoanDTO();
-            loanDTO.setAmount(573279.0);
+            loanDTO.setAmount(123456.0);
             loanDTO.setLoanIssueDate(LocalDate.of(2013, 11, 1));
             loanDTO.setStatus("Open");
             Integer customerId=1007;
@@ -83,7 +83,7 @@ public class DemoManyToOneApplication implements CommandLineRunner {
 
     public void closeLoan() {
         try {
-            Integer loanId=2003;
+            Integer loanId=2005;
             customerLoanService.closeLoan(loanId);
             LOGGER.info(environment.getProperty("UserInterface.LOAN_CLOSE_SUCCESS"));
         } catch (Exception e) {
@@ -94,7 +94,7 @@ public class DemoManyToOneApplication implements CommandLineRunner {
 
     public void deleteLoan() {
         try {
-        Integer loanId=2003;
+        Integer loanId=2005;
         customerLoanService.deleteLoan(loanId);
         LOGGER.info(environment.getProperty("UserInterface.LOAN_DELETE_SUCCESS"));
     } catch (Exception e) {
