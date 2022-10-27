@@ -19,7 +19,7 @@ public class Customer1ServiceImpl implements Customer1Service {
     @Autowired
     private Customer1Repository customerRespository;
     @Override
-    public void addCustomer(CustomerDTO customerDto) throws HnDBankException {
+    public int addCustomer(CustomerDTO customerDto) throws HnDBankException {
         Optional<Customer> optional = customerRespository.findById(customerDto.getCustomerId());
         if (optional.isPresent())
             throw new HnDBankException("Service.CUSTOMER_FOUND");
@@ -28,7 +28,8 @@ public class Customer1ServiceImpl implements Customer1Service {
         customer.setEmailId(customerDto.getEmailId());
         customer.setName(customerDto.getName());
         customer.setCustomerId(customerDto.getCustomerId());
-        customerRespository.save(customer);
+        Customer s = customerRespository.save(customer);
+        return s.getCustomerId();
     }
     @Override
     public CustomerDTO getCustomer(Integer customerId) throws HnDBankException {
